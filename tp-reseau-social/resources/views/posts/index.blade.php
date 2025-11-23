@@ -29,8 +29,8 @@
         <div class="grid gap-6">
             @foreach($posts as $post)
                 @php
-                    $likers_count = $post->likers->count();
-                    $comments_count = $post->comments->count();
+                    //$likers_count = $post->likers->count();
+                    //$comments_count = $post->comments->count();
                 @endphp
                 <div class="bg-white p-4 rounded-lg shadow" id="post-{{ $post->id }}">
                     <!-- En-tête du post -->
@@ -48,7 +48,7 @@
                     @if($post->image_path)
                         <img src="{{ asset('storage/' . $post->image_path) }}" alt="image" class="max-w-full rounded mb-2">
                     @endif
-
+                    {{--
                     <!-- Section Likes et Commentaires -->
                     <div class="flex items-center gap-6 mt-3 pt-3 border-t">
                         <!-- Bouton Like -->
@@ -123,6 +123,7 @@
                             </div>
                         </div>
                     </div>
+                    --}}
                 </div>
             @endforeach
         </div>

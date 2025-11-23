@@ -6,12 +6,12 @@
             <h1 class="text-4xl font-bold text-gray-900">Mon Profil</h1>
             
             <div class="flex gap-2 flex-wrap items-center">
-                {{-- 
+            
                 <!-- Feed -->
                 <a href="{{ route('posts.index') }}"
                    class="px-4 py-2 bg-blue-100 text-blue-800 rounded-lg hover:bg-blue-200 shadow">
                      Feed
-                </a>--}}
+                </a>
 
                 <!-- Utilisateurs -->
                 <a href="{{ route('users.index') }}"
